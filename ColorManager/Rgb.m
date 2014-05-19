@@ -98,14 +98,14 @@
     unsigned long long longlongValue;
     [scanner scanHexLongLong:&longlongValue];
     
-    //将整数转换为NSNumber,存储到数组中,并返回.
+    //将整数转换为NSNumber,并返回.
     NSNumber * hexNumber = [NSNumber numberWithLongLong:longlongValue];
     
     return hexNumber;
 }
 
 #pragma mark - 初始化函数
-///
+
 - (instancetype) initWithRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue
 {
     if (self = [super init])
