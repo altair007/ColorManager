@@ -38,10 +38,10 @@
 		C2580CFA1929B0EB00DEE297 /* ColorDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorDictionary.m; sourceTree = "<group>"; };
 		C2580CFB1929B0EB00DEE297 /* ColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
 		C2580CFC1929B0EB00DEE297 /* ColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
-		C2580CFD1929B0EB00DEE297 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
 		C2580CFE1929B0EB00DEE297 /* Rgb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rgb.h; sourceTree = "<group>"; };
 		C2580CFF1929B0EB00DEE297 /* Rgb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rgb.m; sourceTree = "<group>"; };
 		C2580D031929B11200DEE297 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2580D051929B39200DEE297 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 		C2580CEF1929B05B00DEE297 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C2580D051929B39200DEE297 /* README.md */,
 				C2580CF11929B05B00DEE297 /* ColorManager.1 */,
-				C2580CFD1929B0EB00DEE297 /* readme.md */,
 				C2580CF81929B0EB00DEE297 /* color.plist */,
 				C2580CF01929B05B00DEE297 /* ColorManager-Prefix.pch */,
 			);
