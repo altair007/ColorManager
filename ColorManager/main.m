@@ -2,20 +2,21 @@
 //  main.m
 //  ColorManager
 //
-//  Created by   颜风 on 14-5-19.
+//  Created by   颜风 on 14-5-15.
 //  Copyright (c) 2014年 Shadow. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "ColorManager.h"
+#import "Rgb.h"
 
 int main(int argc, const char * argv[])
 {
-
-    @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+    @autoreleasepool
+    {
+        // 测试 Demo:请确保文件路径正确!
+        ColorManager * colorManager = [ColorManager colorManagerWithDelegate:[ColorDictionary colorDictionary] contentOfFile:@"/tmp/color.plist"];
+        [colorManager writeToFile:@"/tmp/out.plist" atomically:YES];
     }
     return 0;
 }

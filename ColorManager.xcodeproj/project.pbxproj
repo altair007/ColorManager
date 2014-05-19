@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C2580CEB1929B05B00DEE297 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2580CEA1929B05B00DEE297 /* Foundation.framework */; };
-		C2580CEE1929B05B00DEE297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2580CED1929B05B00DEE297 /* main.m */; };
 		C2580CF21929B05B00DEE297 /* ColorManager.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C2580CF11929B05B00DEE297 /* ColorManager.1 */; };
+		C2580D001929B0EB00DEE297 /* ColorDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C2580CFA1929B0EB00DEE297 /* ColorDictionary.m */; };
+		C2580D011929B0EB00DEE297 /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2580CFC1929B0EB00DEE297 /* ColorManager.m */; };
+		C2580D021929B0EB00DEE297 /* Rgb.m in Sources */ = {isa = PBXBuildFile; fileRef = C2580CFF1929B0EB00DEE297 /* Rgb.m */; };
+		C2580D041929B11200DEE297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2580D031929B11200DEE297 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +31,17 @@
 /* Begin PBXFileReference section */
 		C2580CE71929B05B00DEE297 /* ColorManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ColorManager; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2580CEA1929B05B00DEE297 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C2580CED1929B05B00DEE297 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2580CF01929B05B00DEE297 /* ColorManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorManager-Prefix.pch"; sourceTree = "<group>"; };
 		C2580CF11929B05B00DEE297 /* ColorManager.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ColorManager.1; sourceTree = "<group>"; };
+		C2580CF81929B0EB00DEE297 /* color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = color.plist; sourceTree = "<group>"; };
+		C2580CF91929B0EB00DEE297 /* ColorDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDictionary.h; sourceTree = "<group>"; };
+		C2580CFA1929B0EB00DEE297 /* ColorDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorDictionary.m; sourceTree = "<group>"; };
+		C2580CFB1929B0EB00DEE297 /* ColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
+		C2580CFC1929B0EB00DEE297 /* ColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
+		C2580CFD1929B0EB00DEE297 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
+		C2580CFE1929B0EB00DEE297 /* Rgb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rgb.h; sourceTree = "<group>"; };
+		C2580CFF1929B0EB00DEE297 /* Rgb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rgb.m; sourceTree = "<group>"; };
+		C2580D031929B11200DEE297 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +84,13 @@
 		C2580CEC1929B05B00DEE297 /* ColorManager */ = {
 			isa = PBXGroup;
 			children = (
-				C2580CED1929B05B00DEE297 /* main.m */,
-				C2580CF11929B05B00DEE297 /* ColorManager.1 */,
+				C2580D031929B11200DEE297 /* main.m */,
+				C2580CFE1929B0EB00DEE297 /* Rgb.h */,
+				C2580CFF1929B0EB00DEE297 /* Rgb.m */,
+				C2580CF91929B0EB00DEE297 /* ColorDictionary.h */,
+				C2580CFA1929B0EB00DEE297 /* ColorDictionary.m */,
+				C2580CFB1929B0EB00DEE297 /* ColorManager.h */,
+				C2580CFC1929B0EB00DEE297 /* ColorManager.m */,
 				C2580CEF1929B05B00DEE297 /* Supporting Files */,
 			);
 			path = ColorManager;
@@ -83,6 +99,9 @@
 		C2580CEF1929B05B00DEE297 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C2580CF11929B05B00DEE297 /* ColorManager.1 */,
+				C2580CFD1929B0EB00DEE297 /* readme.md */,
+				C2580CF81929B0EB00DEE297 /* color.plist */,
 				C2580CF01929B05B00DEE297 /* ColorManager-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -139,7 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2580CEE1929B05B00DEE297 /* main.m in Sources */,
+				C2580D021929B0EB00DEE297 /* Rgb.m in Sources */,
+				C2580D001929B0EB00DEE297 /* ColorDictionary.m in Sources */,
+				C2580D041929B11200DEE297 /* main.m in Sources */,
+				C2580D011929B0EB00DEE297 /* ColorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

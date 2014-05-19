@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Almond</key>
+	<string>EED9C4</string>
+	<key>Antique Brass</key>
+	<string>C88A65</string>
+	<key>Apricot</key>
+	<string>FDD5B1</string>
+	<key>Aquamarine</key>
+	<string>71D9E2</string>
+	<key>Asparagus</key>
+	<string>7BA05B</string>
+	<key>Atomic Tangerine</key>
+	<string>FF9966</string>
+	<key>Banana Mania</key>
+	<string>FBE7B2</string>
+	<key>Beaver</key>
+	<string>926F5B</string>
+	<key>Bittersweet</key>
+	<string>FE6F5E</string>
+	<key>Black</key>
+	<string>000000</string>
+	<key>Blizzard Blue</key>
+	<string>A3E3ED</string>
+	<key>Blue</key>
+	<string>0066FF</string>
+	<key>Blue Bell</key>
+	<string>9999CC</string>
+	<key>Blue Green</key>
+	<string>0095B6</string>
+	<key>Blue Violet</key>
+	<string>6456B7</string>
+	<key>Brick Red</key>
+	<string>C62D42</string>
+	<key>Brink Pink</key>
+	<string>FB607F</string>
+	<key>Brown</key>
+	<string>AF593E</string>
+	<key>Burnt Orange</key>
+	<string>FF7034</string>
+	<key>Burnt Sienna</key>
+	<string>E97451</string>
+	<key>Cadet Blue</key>
+	<string>A9B2C3</string>
+	<key>Canary</key>
+	<string>FFFF99</string>
+	<key>Caribbean Green</key>
+	<string>00CC99</string>
+	<key>Carnation Pink</key>
+	<string>FFA6C9</string>
+	<key>Cerise</key>
+	<string>DA3287</string>
+	<key>Cerulean</key>
+	<string>02A4D3</string>
+	<key>Chartreuse</key>
+	<string>FF9966</string>
+	<key>Chestnut</key>
+	<string>B94E48</string>
+	<key>Copper</key>
+	<string>DA8A67</string>
+	<key>Cornflower</key>
+	<string>93CCEA</string>
+	<key>Cotton Candy</key>
+	<string>FFB7D5</string>
+	<key>Cranberry</key>
+	<string>DB5079</string>
+	<key>Dandelion</key>
+	<string>FED85D</string>
+	<key>Denim</key>
+	<string>1560BD</string>
+	<key>Desert Sand</key>
+	<string>EDC9AF</string>
+	<key>Eggplant</key>
+	<string>614051</string>
+	<key>Electric Lime</key>
+	<string>CCFF00</string>
+	<key>Fern</key>
+	<string>63B76C</string>
+	<key>Flesh</key>
+	<string>FFCBA4</string>
+	<key>Forest Green</key>
+	<string>5FA777</string>
+	<key>Fuchsia</key>
+	<string>C154C1</string>
+	<key>Fuzzy Wuzzy Brown</key>
+	<string>C45655</string>
+	<key>Gold</key>
+	<string>E6BE8A</string>
+	<key>Goldenrod</key>
+	<string>FCD667</string>
+	<key>Granny Smith Apple</key>
+	<string>9DE093</string>
+	<key>Gray</key>
+	<string>8B8680</string>
+	<key>Green</key>
+	<string>01A368</string>
+	<key>Green Yellow</key>
+	<string>F1E788</string>
+	<key>Happy Ever After</key>
+	<string>6CDA37</string>
+	<key>Hot Magenta</key>
+	<string>FF00CC</string>
+	<key>Inch Worm</key>
+	<string>B0E313</string>
+	<key>Indian Red</key>
+	<string>B94E48</string>
+	<key>Indigo</key>
+	<string>4F69C6</string>
+	<key>Jazzberry Jam</key>
+	<string>A50B5E</string>
+	<key>Jungle Green</key>
+	<string>29AB87</string>
+	<key>Laser Lemon</key>
+	<string>FFFF66</string>
+	<key>Lavender</key>
+	<string>FBAED2</string>
+	<key>Macaroni And Cheese</key>
+	<string>FFB97B</string>
+	<key>Magenta</key>
+	<string>F653A6</string>
+	<key>Magic Mint</key>
+	<string>AAF0D1</string>
+	<key>Mahogany</key>
+	<string>CA3435</string>
+	<key>Manatee</key>
+	<string>8D90A1</string>
+	<key>Mango Tango</key>
+	<string>E77200</string>
+	<key>Maroon</key>
+	<string>C32148</string>
+	<key>Mauvelous</key>
+	<string>F091A9</string>
+	<key>Melon</key>
+	<string>FEBAAD</string>
+	<key>Midnight Blue</key>
+	<string>003366</string>
+	<key>Mountain Meadow</key>
+	<string>1AB385</string>
+	<key>Mulberry</key>
+	<string>C54B8C</string>
+	<key>Navy Blue</key>
+	<string>0066CC</string>
+	<key>Neon Carrot</key>
+	<string>FF9933</string>
+	<key>Olive Green</key>
+	<string>B5B35C</string>
+	<key>Orange</key>
+	<string>FF681F</string>
+	<key>Orchid</key>
+	<string>E29CD2</string>
+	<key>Outer Space</key>
+	<string>2D383A</string>
+	<key>Outrageous Orange</key>
+	<string>FF6037</string>
+	<key>Pacific Blue</key>
+	<string>009DC4</string>
+	<key>Peach</key>
+	<string>FFCBA4</string>
+	<key>Periwinkle</key>
+	<string>C3CDE6</string>
+	<key>Pig Pink</key>
+	<string>FDD7E4</string>
+	<key>Pine Green</key>
+	<string>01796F</string>
+	<key>Pink Flamingo</key>
+	<string>FF66FF</string>
+	<key>Plum</key>
+	<string>843179</string>
+	<key>Prussian Blue</key>
+	<string>003366</string>
+	<key>Purple Heart</key>
+	<string>652DC1</string>
+	<key>Purple Mountain's Majesty</key>
+	<string>9678B6</string>
+	<key>Purple Pizzazz</key>
+	<string>FF00CC</string>
+	<key>Radical Red</key>
+	<string>FF355E</string>
+	<key>Raw Sienna</key>
+	<string>D27D46</string>
+	<key>Razzle Dazzle Rose</key>
+	<string>FF33CC</string>
+	<key>Razzmatazz</key>
+	<string>E30B5C</string>
+	<key>Red</key>
+	<string>ED0A3F</string>
+	<key>Red Orange</key>
+	<string>FF3F34</string>
+	<key>Red Violet</key>
+	<string>BB3385</string>
+	<key>Robin's Egg Blue</key>
+	<string>00CCCC</string>
+	<key>Royal Purple</key>
+	<string>6B3FA0</string>
+	<key>Salmon</key>
+	<string>FF91A4</string>
+	<key>Scarlet</key>
+	<string>FD0E35</string>
+	<key>Screamin' Green</key>
+	<string>66FF66</string>
+	<key>Sea Green</key>
+	<string>93DFB8</string>
+	<key>Sepia</key>
+	<string>9E5B40</string>
+	<key>Shadow</key>
+	<string>837050</string>
+	<key>Shamrock</key>
+	<string>33CC99</string>
+	<key>Shocking Pink</key>
+	<string>FF6FFF</string>
+	<key>Silver</key>
+	<string>C9C0BB</string>
+	<key>Sky Blue</key>
+	<string>76D7EA</string>
+	<key>Spring Green</key>
+	<string>ECEBBD</string>
+	<key>Sunglow</key>
+	<string>FFCC33</string>
+	<key>Sunset Orange</key>
+	<string>FE4C40</string>
+	<key>Tan</key>
+	<string>FA9D5A</string>
+	<key>Tickle Me Pink</key>
+	<string>FC80A5</string>
+	<key>Timberwolf</key>
+	<string>D9D6CF</string>
+	<key>Torch Red</key>
+	<string>FD0E35</string>
+	<key>Tropical Rain Forest</key>
+	<string>00755E</string>
+	<key>Tumbleweed</key>
+	<string>DEA681</string>
+	<key>Turquoise Blue</key>
+	<string>6CDAE7</string>
+	<key>Ultra Green</key>
+	<string>66FF66</string>
+	<key>Ultra Orange</key>
+	<string>FF6037</string>
+	<key>Ultra Pink</key>
+	<string>FF6FFF</string>
+	<key>Ultra Red</key>
+	<string>FD5B78</string>
+	<key>Ultra Yellow</key>
+	<string>FFFF66</string>
+	<key>Unmellow Yellow</key>
+	<string>FFFF66</string>
+	<key>Violet (purple)</key>
+	<string>8359A3</string>
+	<key>Violet Red</key>
+	<string>F7468A</string>
+	<key>Vivid Tangerine</key>
+	<string>FF9980</string>
+	<key>Vivid Violet</key>
+	<string>803790</string>
+	<key>White</key>
+	<string>FFFFFF</string>
+	<key>Wild Blue Yonder</key>
+	<string>7A89B8</string>
+	<key>Wild Strawberry</key>
+	<string>FF3399</string>
+	<key>Wild Watermelon</key>
+	<string>FD5B78</string>
+	<key>Wisteria</key>
+	<string>C9A0DC</string>
+	<key>Yellow</key>
+	<string>FBE870</string>
+	<key>Yellow Green</key>
+	<string>C5E17A</string>
+	<key>Yellow Orange</key>
+	<string>FFAE42</string>
+</dict>
+</plist>
