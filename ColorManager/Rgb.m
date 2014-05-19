@@ -10,9 +10,9 @@
 
 @implementation Rgb
 #pragma mark - 属性
-@synthesize red = _red; // 红
-@synthesize green = _green; // 绿
-@synthesize blue = _blue; // 蓝
+@synthesize red = _red;
+@synthesize green = _green;
+@synthesize blue = _blue;
 #pragma mark - 便利构造器
 + (instancetype) rgbWithRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue
 {
@@ -28,6 +28,7 @@
 }
 
 #pragma mark - 工具方法
+
 + (NSArray *) numberHexString:(NSString * )aHexString
                          step:(NSUInteger)step
 {
@@ -104,6 +105,7 @@
 }
 
 #pragma mark - 初始化函数
+///
 - (instancetype) initWithRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue
 {
     if (self = [super init])

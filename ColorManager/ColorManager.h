@@ -6,120 +6,162 @@
 //  Copyright (c) 2014年 Shadow. All rights reserved.
 //
 
-/*!
- * @class ColorManager
- * 颜色管理,用于颜色英文名对应颜色RGB值的快速查询和修改.
- */
 #import <Foundation/Foundation.h>
 #import "ColorDictionary.h"
 
-@class Rgb; // RGB值类,用于以RGB格式存储RGB值.
+@class Rgb;
 
-// block别名,用于将文件内容转换为NSDictionary格式
+/// block别名,用于将文件内容转换为NSDictionary格式.
 typedef NSDictionary * (^ConverterToDictionary)(NSString *path);
-// block别名,用于将NSDictionry对象写入到指定文件
+
+/// block别名,用于将NSDictionry对象写入到指定文件
 typedef BOOL(^ConverterToFile)(NSDictionary * dict, NSString * path, BOOL flag);
-// 颜色词典代理别名
+
+/// 颜色代理别名,用于简化颜色代理对象的定义.
 typedef id<ColorDictionary> ColorDictionaryDelegate;
 
+/**
+ *  管理颜色数据的类
+ */
 @interface ColorManager : NSObject
 #pragma mark - 属性
-@property (nonatomic, strong)ColorDictionaryDelegate delegate;// 委托,用于以名值对形式存储字典.
+@property (nonatomic, strong)ColorDictionaryDelegate delegate;//!< 委托,用于以名值对形式存储字典.
 #pragma mark - 便利构造器
-/*!
- * @method colorManagerWithContentsOfFil:
- * 从一个以字典格式存储的.plist属性列表文件读取数据,进行初始化,以key为颜色的名称,以value表示颜色的RGB的十六进制字符串.
- * 文件后缀不必是.plist;如果.plist文件不是以字典格式存储,将返回nil.
+/**
+ *  便利构造器,从一个属性列表文件读取数据创建新对象.
+ *
+ *  @param aDelegate 颜色代理
+ *  @param path      文件路径
+ *
+ *  @return 一个ColorManager对象.
  */
 + (instancetype) colorManagerWithDelegate:(ColorDictionaryDelegate)aDelegate
                      contentOfFile:(NSString *)path;
 
-/*!
- * @method colorManagerWithContentsOfFil:usingConverter:
- * 使用指定的工具函数,从文件读取数据,进行初始化.
+/**
+ *  便利构造器,使用指定的block,从任一类型的文件读取数据,创建新对象.
+ *
+ *  @param aDelegate 代理
+ *  @param path      文件路径
+ *  @param ctd       block,用于将任一文件类型中的数据转换为特定数据格式返回.
+ *
+ *  @return 一个ColorManager对象.
  */
 + (instancetype) colorManagerWithDelegate:(ColorDictionaryDelegate)aDelegate
                     contentOfFile:(NSString *)path
                     usingConverter:(ConverterToDictionary) ctd;
 
-/*!
- * @method colorManagerWithDictionary:
- * 用一个NSDictionary对象初始化,以key为颜色的名称,以value为颜色的RGB值或者一个存储rgb数据的十六进制字符串.
+/**
+ *  便利构造器,从一个字典中获取数据,创建新对象.
+ *
+ *  @param aDelegate 颜色代理
+ *  @param dict      提供数据的字典
+ *
+ *  @return 一个ColorManager对象.
  */
 + (instancetype) colorManagerWithDelegate:(ColorDictionaryDelegate)aDelegate
                         dictionary:(NSDictionary *)dict;
 
 #pragma mark - 初始化方法
-/*!
- * @method initWithContentsOfFil:
- * 从一个以字典格式存储的.plist属性列表文件读取数据,进行初始化,以key为颜色的名称,以value为表示颜色的RGB的十六进制字符串.
- * 文件后缀不必是.plist;如果.plist文件不是以字典格式存储,将返回nil.
+/**
+ *  便利初始化函数,从一个属性列表文件读取数据创建新对象.
+ *
+ *  @param aDelegate 颜色代理
+ *  @param path      文件路径
+ *
+ *  @return 一个ColorManager对象.
  */
 - (instancetype) initWithDelegate:(ColorDictionaryDelegate)aDelegate
                     contentOfFile:(NSString *)path;
 
-/*!
- * @method initWithContentsOfFil:usingConverter:
- * 使用指定的工具函数,从文件读取数据,进行初始化.
+/**
+ *  便利构造器,使用指定的block,从任一类型的文件读取数据,创建新对象.
+ *
+ *  @param aDelegate 代理
+ *  @param path      文件路径
+ *  @param ctd       block,用于将任一文件类型中的数据转换为特定数据格式返回.
+ *
+ *  @return 一个ColorManager对象.
  */
 - (instancetype) initWithDelegate:(ColorDictionaryDelegate)aDelegate
                     contentOfFile:(NSString *)path
                    usingConverter:(ConverterToDictionary) ctd;
 
-/*!
- * @method initWithDictionary:
- * 用一个NSDictionary对象初始化,以key为颜色的名称,以value为颜色的RGB对象或者一个存储rgb数据的十六进制字符串.
+/**
+ *  便利构造器,从一个字典中获取数据,创建新对象.
+ *
+ *  @param aDelegate 颜色代理
+ *  @param dict      提供数据的字典
+ *
+ *  @return 一个ColorManager对象.
  */
 - (instancetype) initWithDelegate:(ColorDictionaryDelegate)aDelegate
                        dictionary:(NSDictionary *)dict;
 
 # pragma mark - 实例方法
-/*!
- * @method colorNameForRgb:
- * 查询rgb值对应的颜色名.
+/**
+ *  查询Rgb对象对应的颜色名.
+ *
+ *  @param aRgb 要查询器颜色名的Rgb对象.
+ *
+ *  @return 此Rgb对象对应的Rgb对象.
  */
 - (NSString *)colorNameForRgb:(Rgb *)aRgb;
 
-/*!
- * @method rgbForColorName:
- * 查询颜色名对应的RGB值.
+/**
+ *  查询颜色名对应的Rgb对象.
+ *
+ *  @param aColorName 要查询器对应的Rgb对象的颜色名.
+ *
+ *  @return 此颜色名对应的Rgb对象.
  */
 - (Rgb *)rgbForColorName:(NSString *)aColorName;
 
-/*!
- * @method setColorName:forRgb:
- * 更改RGB值对应的颜色名.如果RGB值不存在,则直接添加.设置为nil,则会删除相关的颜色对象.
+/**
+ *  设置,更改Rgb对象的颜色名.如果传入的颜色名为nil,则会删除此Rgb对象相关的颜色数据.
+ *
+ *  @param aColorname 新的颜色名.
+ *  @param aRgb       一个Rgb对象.
  */
 - (void)setColorName:(NSString *)aColorname
               forRgb:(Rgb *)aRgb;
 
-/*!
- * @method setRgb:forColorName:
- * 更改颜色名对应的RGB值.如果颜色名不存在,则直接添加.设置为nil,则会删除相关的颜色对象.
+/**
+ *  设置或者更改aClorName对应的Rgb对象;如果aRgb为nil,则直接删除aClorName相关的颜色数据.
+ *
+ *  @param aRgb       新的Rgb对象.
+ *  @param aColorName 颜色名.
  */
 - (void)setRgb:(Rgb *)aRgb
   forColorName:(NSString *)aColorName;
 
-/*!
- * @method writeToFile:atomically:
- * 将文件以NSDictionry格式写入指定的文件.
- * flag:(YES)先将内容输出到一个临时文件,输出完成后,再重命名为目标文件;NO,直接输出到目标文件,可能会损坏文件.
+/**
+ *  将颜色数据以NSDictionary格式写入指定的属性列表文件.
+ *
+ *  @param path 文件路径.
+ *  @param flag YES,先将内容输出到一个临时文件,输出完成后,再重命名为目标文件;NO,直接输出到目标文件.后者,可能会损坏文件.
+ *
+ *  @return 成功返回YES,失败返回NO.
  */
 - (BOOL)writeToFile:(NSString *)path
          atomically:(BOOL)flag;
 
-/*!
- * @method writeToFile:atomically:usingConverter:
- * 使用指定的block,将内容输出到文件.如果指定的block为nil或者block返回的结果为nil,则调用默认的从文件初始化的方法
- * flag:(YES)先将内容输出到一个临时文件,输出完成后,再重命名为目标文件;NO,直接输出到目标文件,可能会损坏文件.
+/**
+ *  使用指定的block,将颜色数据写入到任一类型的文件中.如果指定的block为nil或者block执行失败,则调用 writeToFile:atomically:方法.
+ *
+ *  @param flag YES,先将内容输出到一个临时文件,输出完成后,再重命名为目标文件;NO,直接输出到目标文件.后者,可能会损坏文件.
+ *  @param ctf  block,函数将调用此方法,将数据写入到指定的文件中.
+ *
+ *  @return YES,成功;NO,失败.
  */
 - (BOOL)writeToFile:(NSString *)path
          atomically:(BOOL)flag
      usingConverter:(ConverterToFile)ctf;
 
-/*!
- * @method allColors
- * 以字典形式返回所有字符串,要求以颜色名为键,以RGB为值.
+/**
+ *  以字典形式返回所有字符串.
+ *
+ *  @return 含有所有颜色数据的字典,以颜色名为键,以Rgb数据为值.
  */
 - (NSDictionary *)allColors;
 @end

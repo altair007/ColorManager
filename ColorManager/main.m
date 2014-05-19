@@ -15,8 +15,10 @@ int main(int argc, const char * argv[])
     @autoreleasepool
     {
         // 测试 Demo:请确保文件路径正确!
-        ColorManager * colorManager = [ColorManager colorManagerWithDelegate:[ColorDictionary colorDictionary] contentOfFile:@"/tmp/color.plist"];
-        [colorManager writeToFile:@"/tmp/out.plist" atomically:YES];
+        ColorManager * colorManager = [ColorManager colorManagerWithDelegate:[ColorDictionary colorDictionary] contentOfFile:@"color.plist"];
+        [colorManager writeToFile:@"/tmp/out.plist" atomically:YES usingConverter:^BOOL(NSDictionary *dict, NSString *path, BOOL flag) {
+            return NO;
+        }];
     }
     return 0;
 }

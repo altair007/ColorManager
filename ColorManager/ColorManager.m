@@ -119,12 +119,14 @@
 
 - (NSString *)colorNameForRgb:(Rgb *)aRgb
 {
-    return [self.delegate colorNameForRgb:aRgb];
+    NSString * colorName = [self.delegate colorNameForRgb:aRgb];
+    return colorName;
 }
 
 - (Rgb *)rgbForColorName:(NSString *)aColorName
 {
-    return [self.delegate rgbForColorName:aColorName];
+    Rgb * rgb = [self.delegate rgbForColorName:aColorName];
+    return rgb;
 }
 
 - (void)setColorName:(NSString *)aColorname
@@ -162,25 +164,29 @@
          atomically:(BOOL)flag
      usingConverter:(ConverterToFile)ctf
 {
-    // 判断block是否为nil,是则直接调用writeToFile:atomically:
-    if (nil == ctf)
+    BOOL result = NO;// 存储结果.
+    
+    NSDictionary * dict = [self allColors];// 所有颜色数据
+    
+    // 先让自定义block试一下.
+    if(nil != ctf)
     {
-        return [self writeToFile:path atomically:flag];
+        result = ctf(dict, path, flag);
     }
     
-    NSDictionary * dict = [self allColors];
-    
-    // 运行自定义的blocK,把颜色数据写入文件.
-    BOOL result = ctf(dict, path, flag);
-    if (NO == result)
+    // 自定义的block完成任务了吗?
+    if(result == NO)
     {
         result = [self writeToFile:path atomically:flag];
     }
+    
+    // 返回结果.
     return result;
 }
 
 - (NSDictionary *)allColors
 {
-    return [self.delegate allColors];
+    NSDictionary * dict = [self.delegate allColors];
+    return dict;
 }
 @end
