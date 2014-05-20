@@ -25,7 +25,7 @@ typedef id<ColorDictionary> ColorDictionaryDelegate;
  */
 @interface ColorManager : NSObject
 #pragma mark - 属性
-@property (nonatomic, strong)ColorDictionaryDelegate delegate;//!< 委托,用于以名值对形式存储字典.
+@property (nonatomic, weak)ColorDictionaryDelegate delegate;//!< 委托,用于以名值对形式存储字典.
 #pragma mark - 便利构造器
 /**
  *  便利构造器,从一个属性列表文件读取数据创建新对象.
