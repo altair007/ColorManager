@@ -118,7 +118,7 @@ typedef id<ColorDictionary> ColorDictionaryDelegate;
 - (Rgb *)rgbForColorName:(NSString *)aColorName;
 
 /**
- *  设置,更改Rgb对象的颜色名.如果传入的颜色名为nil,则会删除此Rgb对象相关的颜色数据.
+ *  设置,更改Rgb对象的颜色名.如果传入的颜色名为nil,则会删除此Rgb对象相关的颜色数据;如果不存在aRgb,则添加.
  *
  *  @param aColorname 新的颜色名.
  *  @param aRgb       一个Rgb对象.
@@ -127,7 +127,7 @@ typedef id<ColorDictionary> ColorDictionaryDelegate;
               forRgb:(Rgb *)aRgb;
 
 /**
- *  设置或者更改aClorName对应的Rgb对象;如果aRgb为nil,则直接删除aClorName相关的颜色数据.
+ *  设置或者更改aClorName对应的Rgb对象;如果aRgb为nil,则直接删除aClorName相关的颜色数据;如果不存在aColorName,则添加.
  *
  *  @param aRgb       新的Rgb对象.
  *  @param aColorName 颜色名.

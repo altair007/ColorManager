@@ -34,7 +34,7 @@
 - (Rgb *)rgbForColorName:(NSString *)aColorName;
 
 /**
- *  设置,更改aRgb对应的颜色名;如果aColorName为nil,则删除aRgb对象相关的颜色数据.
+ *  设置,更改aRgb对应的颜色名;如果aColorName为nil,则删除aRgb对象相关的颜色数据;如果不存在aRgb,则添加.
  *
  *  @param aColorname 新的颜色名
  *  @param aRgb       一个Rgb对象.
@@ -43,7 +43,7 @@
               forRgb:(Rgb *)aRgb;
 
 /**
- *  设置,更改aColorName对应的Rgb对象;如果aColorName为nil,则删除aColorName相关的颜色数据.
+ *  设置,更改aColorName对应的Rgb对象;如果aColorName为nil,则删除aColorName相关的颜色数据;如果不存在aColorName,则添加.
  *
  *  @param aRgb       新的颜色名.
  *  @param aColorName 一个Rgb对象.
