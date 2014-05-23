@@ -42,7 +42,7 @@
 - (instancetype) initWithDelegate:(ColorDictionaryDelegate)aDelegate
                     contentOfFile:(NSString *)path
 {
-    if(self == [super init])
+    if(self = [super init])
     {
         // 设置代理
         self.delegate = aDelegate;
@@ -58,6 +58,7 @@
              }
              [self.delegate setRgb:obj forColorName:aColorName];
          }];    }
+    
     return  self;
 }
 
